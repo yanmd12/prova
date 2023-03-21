@@ -70,6 +70,44 @@ section h2{
 	margin-bottom: .5rem;
 }
 
+
+
+.comidas{
+    width: 3 rem;
+    padding: 300px ;
+    display: flex;
+    flex-wrap: wrap;
+    
+    
+    height: auto;
+    
+    padding: 5rem 0 0 5rem;
+    /* mesma coisa que colocar cada um em um padding só */
+}
+.comida__titulo{
+    font-size: 1.500rem;
+}
+
+.comida__descricao{
+    font-size: 1.200;
+    text-align: justify;
+}
+
+.comida__conteudo{
+    padding: 1rem;
+}
+
+.comida__imagem{
+    height: 460px;
+    width: 472px;
+    box-shadow: 20%;
+    
+    
+    
+    }
+
+
+
 table{
 	width: 100%;
 	margin-bottom : .5rem;
@@ -170,4 +208,9 @@ button[disabled=disabled], button:disabled {
 
 .invisivel {
 	display: none;
+}
+
+footer{
+	background-color: rgb(72, 71, 71);
+	color: #ffffff;
 }
