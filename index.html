@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROVA</title>
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+
+    <header >
+        
+        <div class="container">
+            <img class="logo" src="img/logotipo-do-restaurante-retro_23-2148474404.avif" alt="Logotipo"   >
+            <h2 class="titulo">Dom la Carta</h2>
+        
+        </div>
+    </header>
+    <main>
+        <section class="container">
+            <h2>Minhas reservas</h2>
+            <!-- <label for="filtrar-tabela">Filtre:</label>
+            <input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome do cliente"> -->
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome Cliente</th>
+                        <th>Qntd de Pessoas</th>
+                        <th>Dia</th>
+                        <th>Horario reservado</th>
+                        <th>Total de Reservas</th>
+                       
+                    </tr>
+                </thead>
+                <tbody id="tabela-reservas">
+                    <tr class="reserva" id="primera-reserva">
+                        <td class="info-nome">yan</td>
+                        <td class="info-qntd">2</td>
+                        <td class="info-dia">2006-5-10</td>
+                        <td class="info-hora">10:30</td>
+                        <td class="info-total" >1</td>
+                    </tr>
+
+                    <tr class="reserva" >
+                        
+                    </tr>
+
+                    <tr class="reserva" >
+                       
+                    </tr>
+
+                    <tr class="reserva">
+                       
+                    </tr>
+                    <tr class="reserva" >
+                       
+                    </tr>
+                </tbody>
+            </table>
+            <!-- <span id="erro-ajax" class="invisivel">Erro ao buscar os clientes</span>
+
+            <button id="buscar-clientes" class="botao bto-principal">Buscar Clientes</button> -->
+
+        </section>
+    </main>
+
+    <section class="container">
+        <h2 id="titulo-form">Adicionar nova reserva</h2>
+        <ul id="mensagens-erro"></ul>
+        <form id="form-adiciona">
+            <div class="">
+                <label for="nome">Nome:</label>
+                <input id="nome" name="nome" type="text" placeholder="digite o nome do seu cliente" class="campo">
+            </div>
+            <div class="grupo">
+                <label for="qntd">Quantidade de pessoas:</label>
+                <input id="qntd" name="qntd" type="text" placeholder="digite a quantidade de pessoas" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="qntd">Dia:</label>
+                <input id="dia" name="dia" type="date" placeholder="digite a data atual" class="campo campo-medio">
+            </div>
+            <div class="grupo">
+                <label for="hora">Hora:</label>
+                <input id="hora" type="time" placeholder="digite o horario" class="campo campo-medio">
+            </div>
+
+            <button id="adicionar-reserva" class="botao bto-principal" onclick="`${nome.length}`">Adicionar</button>
+        </form>
+    </section>
+    <footer>
+       
+    </footer>
+
+    
+</body>
+    <!-- Sempre criar o link com script ao final do body -->
+
+    
+    <script src="js/calculaReserva.js"></script>
+    <script src="js/form.js"></script>
+    <script src="js/removeReserva.js"></script>
+    
+
+
+</html>
